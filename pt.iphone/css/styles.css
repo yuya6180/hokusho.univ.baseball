@@ -1,0 +1,294 @@
+body{
+    font-family: sans-serif;
+    font-weight: 300;
+    margin: 0%;
+}
+.header{
+  position: relative;
+}
+.head{
+    background-color: brown;
+    display: flex;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10px;
+}
+.head img{
+    width: 50px;
+    padding: 5px;
+}
+.head h1{
+    color: #fff;
+    padding: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.material-icons{
+    margin: 16px 14px auto auto;
+    color: #fff;
+}
+
+
+
+
+/* 
+hamburger(ハンバーガーアイコン)
+=================================== */
+.hamburger {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 300;
+  }
+  
+  .hamburger__line {
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    right: 0;
+    background-color: #000;
+    transition: all 0.5s;
+  }
+  
+  .hamburger__line--1 {
+    top: -5px;
+    background: #fff;
+  }
+  
+  .hamburger__line--2 {
+    top: 10px;
+    height: 3px;
+    background: #fff;
+  }
+  
+  .hamburger__line--3 {
+    top: 24px;
+    background: #fff;
+  }
+  
+  /*ハンバーガーがクリックされたら*/
+  .open .hamburger__line--1 {
+    transform: rotate(-45deg);
+    top: 11px;
+  }
+  
+  .open .hamburger__line--2 {
+    opacity: 0;
+  }
+  
+  .open .hamburger__line--3 {
+    transform: rotate(45deg);
+    top: 11px;
+  }
+  
+  /* 
+  sp-nav(ナビ)
+  =================================== */
+  .sp-nav {
+    position: fixed;
+    right: -100%; /*ハンバーガーがクリックされる前はWindow右側に隠す*/
+    top: 0;
+    width: 70%; /* 出てくるスライドメニューの幅 */
+    height: 100vh;
+    background-color: brown;
+    transition: all 0.8s;
+    z-index: 200;
+    overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+  }
+
+  .sp-nav ul{
+      margin-top: 100px;
+  }
+  .sp-nav a{
+      text-decoration: none
+  }
+  .sp-nav ul li{
+      font-size: 28px;
+      margin-top: 20px;
+      text-align: center;
+      color: #fff;
+      border-bottom:solid 2px #fff;   
+      margin-top: 30px;  
+  }
+  
+  /*ハンバーガーがクリックされたら右からスライド*/
+  .open .sp-nav {
+    right: 0;
+  }
+  
+  /* 
+  black-bg(ハンバーガーメニュー解除用bg)
+  =================================== */
+  .black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  /*ハンバーガーメニューが開いたら表示*/
+  .open .black-bg {
+    opacity: 0.3;
+    visibility: visible;
+  }
+
+
+  .carousel{
+    width: 80%;
+    margin: 16px auto;
+}
+/* --------カルーセル-------- */
+/* force image size */
+#slides{
+  padding-top: 70px;
+}
+.slide img {
+    width: inherit;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  .slide {
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .slide > :first-child {
+    animation-name: slide;
+    animation-duration: 12s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      margin-left: 0;
+    }
+    33% {
+      margin-left: -100%;
+    }
+    66% {
+      margin-left: -200%;
+    }
+    100% {
+      margin-left: -300%;
+    }
+  }
+  
+  .center {
+    margin: auto;
+  }
+  
+/* -------------------------------- */
+  .sec1{
+    position: relative;
+    z-index: -1;
+}
+.black-box{
+    width: 100%;
+    height: 200px;
+    transform: skewY(-3deg);
+    position: absolute;
+    top: -50px;
+    z-index: -1;
+    background-color: rgb(32, 32, 32);
+}
+/* .black-box2{
+    width: 100%;
+    height: 20px;
+    transform: skewY(3deg);
+    position: absolute;
+    top: 230px;
+    z-index: -1;
+    background-color: rgb(32, 32, 32);
+} */
+.slogan{
+    background-color: rgb(32, 32, 32);;
+    text-align: center;
+    /* padding: 80px 0 80px; */
+    color: #fff;
+    letter-spacing: 6px;
+    margin-top: 80px;
+}
+.slogan h1{
+    font-size: 10px;
+    padding-bottom: 30px;
+}
+.slogan h2{
+    font-size: 14px;
+    z-index: -1;
+}
+.slogan p{
+    text-align: center;
+    font-size: 10px;
+    padding: 30px;
+}
+
+/* ---------- */
+.how-to-use{
+    margin: 50px 20px;
+}
+.how-to-use iframe{
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.how-to-use .iframe-wrapper{
+    background: pink;
+    /* padding-bottom: 56.25%; */
+    padding-bottom: 100%;
+    height: 0;
+}
+/* ----- */
+
+.message {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 12px;
+}
+.message img{
+    height: auto;
+    margin:0 auto;
+    width: 70%;
+}
+.message h3{
+  font-weight: 300;
+  margin-top: 20px;
+  text-align: center;
+}
+.message p{
+    margin-top: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+}
+footer h2{
+    font-weight: 300;
+    font-size: 8px;
+    background: #333;
+    height: 50px;
+    color: #fff;
+    padding: 40px 0 0 20px;
+}
+
