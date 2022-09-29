@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>北翔大学硬式野球部ホームページ</title>
     <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="css/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/img/favicon.png">
+    <link rel="manifest" href="css/img/favicon.png">
+    <link rel="mask-icon" href="css/img/favicon.png" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <style>
         /*
 html5doctor.com Reset Stylesheet
@@ -115,8 +124,40 @@ input, select {
 
 main{
     margin: 0;
+    background: rgb(253, 249, 233);
+    /* ----------------------------------- */
+    font-size: 10px;
+    padding: 80px 0 40px;
+}
+table{
+    margin: 0 auto;
+}
+table tr td,th{
+    border: 1px solid;
+    padding: 4px 0px;
+    text-align: center;
 }
 .possition{
+    background: brown;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto 20px;
+}
+.possition p{
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    table tr td,th{
+        font-size: 16px;
+        padding: 8px 12px;
+        line-height: 24px;
+    }
+}
+/*.possition{
     background: brown;
     color: #fff;
     font-size: 26px;
@@ -129,28 +170,15 @@ main{
     text-align: center;
 }
 .fix{
-    padding-top: 80px;
+    padding-top: 90px;
 }
-/* .kyaputen{
-    border: 2px black solid;
-}
-.kyaputen img {
-}
-.kyaputen ul li{
-    font-size: 12px;
-    padding: 4px 8px;
-    list-style: none;
-    border-top: 2px black solid;
-} */
 .member{
     border: 2px black solid;
-    margin: 0 auto;
-    margin: 20px 3px 10px 3px;
+    margin: 20px auto;
     width: 140px;
     text-align: center;
 }
-#syusyou{
-    margin: 0 auto;
+#syusyou2{
     margin:20px auto;
 }
 .member img {
@@ -170,6 +198,17 @@ main{
 footer{
     margin-top: 50px;
 }
+
+@media (min-width: 768px) {
+    #syusyou{
+        margin-right: 0px;
+    }
+
+    .member{
+        margin-left: 134px;
+    }
+} */
+
     </style>
 </head>
 <body>
@@ -185,23 +224,241 @@ footer{
                   <ul>
                     <a href="index.html"><li>ホーム</li></a>
                     <a href="katsudou.html"><li>活動紹介</li></a>
-                    <li>試合日程</li>
+                    <!-- <a href="nittei.html"><li>試合日程</li></a> -->
+                    <a href="teamkousei.html"><li>チーム構成</li></a>
+                    <a href="sukejul.html"><li>年間スケジュール</li></a>
+                    <a href="torikumi.html"><li>独自の取り組み</li></a>
+                    <a href="coachmessage.html"><li>指導者の方へ</li></a>
+                    <a href="staff.html"><li>学生コーチ・マネージャー・アナリスト募集</li></a>
                   </ul>
                 </nav>
                 <div class="black-bg" id="js-black-bg"></div>
                </div>
 
 
-            <img src="css/img/hu.icon.png" alt="">
+               <a href="index.html"><img src="css/img/favicon.png" alt=""></a>
             <h1>北翔大学硬式野球部</h1>
         </div>
     </header>
     <main>
-        <div class="fix">
+        <div class="possition">
+            <p>選手紹介</p>
+        </div>
+        <table>
+            <tr>
+                <th>氏名</th><th>ポジション<br>又は役職</th><th>投打</th><th>身長・体重</th><th>学部・学年</th><th>出身高校</th>
+            </tr>
+            <tr>
+                <td>渡辺　琉太</td><td>主将兼内野</td><td>右左</td><td>175㎝・70㎏</td><td>生涯スポーツ学部４年</td><td>北海高</td>
+            </tr>
+            <tr>
+                <td>緒方　康太</td><td>副主将兼捕手</td><td>右右</td><td>176㎝・80㎏</td><td>生涯スポーツ学部４年</td><td>札幌大谷高</td>
+            </tr>
+            <tr>
+                <td>蓬田　航大</td><td>副主将兼内野</td><td>右右</td><td>173㎝・72㎏</td><td>生涯スポーツ学部４年</td><td>北海高</td>
+            </tr>
+            <tr>
+                <td>山田　翔仁</td><td>副主将兼内野</td><td>右左</td><td>166㎝・67㎏</td><td>生涯スポーツ学部3年</td><td>駒澤大学付属<br>苫小牧高</td>
+            </tr>
+            <tr>
+                <td>川浪　優月</td><td>投手</td><td>右右</td><td>174㎝・86㎏</td><td>生涯スポーツ学部４年</td><td>札幌あすかぜ高</td>
+            </tr>
+            <tr>
+                <td>高津　柊</td><td>投手</td><td>右右</td><td>168㎝・70㎏</td><td>生涯スポーツ学部４年</td><td>札幌光星高</td>
+            </tr>
+            <tr>
+                <td>三間　陽樹</td><td>投手</td><td>右右</td><td>1741㎝・78㎏</td><td>生涯スポーツ学部４年</td><td>北海高</td>
+            </tr>
+            <tr>
+                <td>鏡　太志</td><td>投手</td><td>右左</td><td>164㎝・61㎏</td><td>生涯スポーツ学部3年</td><td>山形県立<br>上山明新館高</td>
+            </tr>
+            <tr>
+                <td>佐藤　大斗</td><td>投手</td><td>右右</td><td>188㎝・78㎏</td><td>生涯スポーツ学部3年</td><td>小樽桜陽高</td>
+            </tr>
+            <tr>
+                <td>島本　太一</td><td>投手</td><td>右右</td><td>173㎝・70㎏</td><td>生涯スポーツ学部3年</td><td>札幌清田高</td>
+            </tr>
+            <tr>
+                <td>鈴木　駿希</td><td>投手</td><td>右右</td><td>188㎝・95㎏</td><td>生涯スポーツ学部3年</td><td>北海学園札幌高</td>
+            </tr>
+            <tr>
+                <td>太刀川将一</td><td>投手</td><td>右右</td><td>177㎝・80㎏</td><td>生涯スポーツ学部3年</td><td>札幌新川高</td>
+            </tr>
+            <tr>
+                <td>野沢　歩希</td><td>投手</td><td>右右</td><td>173㎝・76㎏</td><td>生涯スポーツ学部3年</td><td>札幌あすかぜ高</td>
+            </tr>
+            <tr>
+                <td>藤田　祐大</td><td>投手</td><td>右右</td><td>170㎝・80㎏</td><td>生涯スポーツ学部3年</td><td>弟子屈高</td>
+            </tr>
+            <tr>
+                <td>久保田陽向</td><td>投手</td><td>左左</td><td>172㎝・72㎏</td><td>生涯スポーツ学部2年</td><td>室蘭工業高</td>
+            </tr>
+            <tr>
+                <td>斎藤　旺</td><td>投手</td><td>右右</td><td>174㎝・70㎏</td><td>生涯スポーツ学部2年</td><td>札幌白陵高</td>
+            </tr>
+            <tr>
+                <td>猪田　京右</td><td>投手</td><td>左左</td><td>166㎝・68㎏</td><td>生涯スポーツ学部1年</td><td>苫小牧東高</td>
+            </tr>
+            <tr>
+                <td>棚橋　佳宥</td><td>投手</td><td>左左</td><td>174㎝・62㎏</td><td>生涯スポーツ学部1年</td><td>駒澤大学付属<br>苫小牧高</td>
+            </tr>
+            <tr>
+                <td>中村　海斗</td><td>投手</td><td>左左</td><td>174㎝・73㎏</td><td>生涯スポーツ学部1年</td><td>北星学園大学<br>付属高</td>
+            </tr>
+            <tr>
+                <td>平井　航大</td><td>投手</td><td>左左</td><td>182㎝・68㎏</td><td>生涯スポーツ学部1年</td><td>札幌稲雲高</td>
+            </tr>
+            <tr>
+                <td>八城　仁</td><td>投手</td><td>左左</td><td>173㎝・72㎏</td><td>生涯スポーツ学部1年</td><td>北星学園大学<br>付属高</td>
+            </tr>
+            <tr>
+                <td>若林　優希</td><td>投手</td><td>左左</td><td>170㎝・66㎏</td><td>生涯スポーツ学部1年</td><td>室蘭清水ヶ丘高</td>
+            </tr>
+            <tr>
+                <td>前田　恭敬</td><td>捕手</td><td>右左</td><td>179㎝・78㎏</td><td>生涯スポーツ学部4年</td><td>浦河高</td>
+            </tr>
+            <tr>
+                <td>田辺昂汰郎</td><td>捕手</td><td>右右</td><td>171㎝・95㎏</td><td>生涯スポーツ学部3年</td><td>白樺学園高</td>
+            </tr>
+            <tr>
+                <td>阿部　治貴</td><td>捕手</td><td>右右</td><td>168㎝・77㎏</td><td>生涯スポーツ学部2年</td><td>函館大学付属<br>柏稜高</td>
+            </tr>
+            <tr>
+                <td>小山　凪人</td><td>捕手</td><td>右右</td><td>170㎝・75㎏</td><td>生涯スポーツ学部2年</td><td>北海道栄高</td>
+            </tr>
+            <tr>
+                <td>角　幸四郎</td><td>捕手</td><td>右左</td><td>178㎝・90㎏</td><td>生涯スポーツ学部1年</td><td>静内高</td>
+            </tr>
+            <tr>
+                <td>西川　一路</td><td>捕手</td><td>右右</td><td>169㎝・85㎏</td><td>生涯スポーツ学部1年</td><td>旭川龍谷高</td>
+            </tr>
+            <tr>
+                <td>岸部　雅隆</td><td>内野</td><td>右左</td><td>172㎝・67㎏</td><td>教育文化学部4年</td><td>東海大学付属<br>札幌高</td>
+            </tr>
+            <tr>
+                <td>黒岩　虹太</td><td>内野</td><td>右左</td><td>168㎝・67㎏</td><td>生涯スポーツ学部4年</td><td>北海道科学<br>大学高</td>
+            </tr>
+            <tr>
+                <td>橋田　隆也</td><td>内野</td><td>右右</td><td>178㎝・78㎏</td><td>生涯スポーツ学部4年</td><td>札幌日本大学高</td>
+            </tr>
+            <tr>
+                <td>河野　涼太</td><td>内野</td><td>右右</td><td>172㎝・78㎏</td><td>生涯スポーツ学部3年</td><td>稚内大谷高</td>
+            </tr>
+            <tr>
+                <td>瀬屑　悠登</td><td>内野</td><td>右右</td><td>169㎝・65㎏</td><td>生涯スポーツ学部3年</td><td>駒澤大学付属<br>苫小牧高</td>
+            </tr>
+            <tr>
+                <td>寺本　零樹</td><td>内野</td><td>右右</td><td>165㎝・63㎏</td><td>生涯スポーツ学部3年</td><td>白樺学園高</td>
+            </tr>
+            <tr>
+                <td>黒岩　虹太</td><td>内野</td><td>右左</td><td>168㎝・67㎏</td><td>生涯スポーツ学部3年</td><td>北海道科学<br>大学高</td>
+            </tr>
+            <tr>
+                <td>板野　勇太</td><td>内野</td><td>右右</td><td>163㎝・58㎏</td><td>生涯スポーツ学部3年</td><td>旭川実業高</td>
+            </tr>
+            <tr>
+                <td>伊勢　藍斗</td><td>内野</td><td>右右</td><td>175㎝・70㎏</td><td>生涯スポーツ学部2年</td><td>苫小牧中央高</td>
+            </tr>
+            <tr>
+                <td>金曽駿太郎</td><td>内野</td><td>右左</td><td>158㎝・62㎏</td><td>生涯スポーツ学部2年</td><td>帯広大谷高</td>
+            </tr>
+            <tr>
+                <td>菊竹　利来</td><td>内野</td><td>右左</td><td>173㎝・76㎏</td><td>生涯スポーツ学部2年</td><td>福岡工業大学<br>付属城東高</td>
+            </tr>
+            <tr>
+                <td>庄内　憧人</td><td>内野</td><td>右右</td><td>171㎝・69㎏</td><td>生涯スポーツ学部2年</td><td>東海大学付属<br>札幌高</td>
+            </tr>
+            <tr>
+                <td>生田目　陸</td><td>内野</td><td>右右</td><td>180㎝・90㎏</td><td>生涯スポーツ学部2年</td><td>帯広大谷高</td>
+            </tr>
+            <tr>
+                <td>水谷　幸誠</td><td>内野</td><td>右右</td><td>168㎝・64㎏</td><td>生涯スポーツ学部2年</td><td>札幌山の手高</td>
+            </tr>
+            <tr>
+                <td>磯　拓志</td><td>内野</td><td>右左</td><td>180㎝・86㎏</td><td>生涯スポーツ学部1年</td><td>秋田県立角館高</td>
+            </tr>
+            <tr>
+                <td>伊藤　鴻成</td><td>内野</td><td>右左</td><td>183㎝・94㎏</td><td>生涯スポーツ学部1年</td><td>札幌第一高</td>
+            </tr>
+            <tr>
+                <td>宇佐美瞬大</td><td>内野</td><td>右み</td><td>174㎝・70㎏</td><td>生涯スポーツ学部1年</td><td>旭川実業高</td>
+            </tr>
+            <tr>
+                <td>大崎仙太郎</td><td>内野</td><td>右右</td><td>178㎝・79㎏</td><td>生涯スポーツ学部1年</td><td>遠軽高</td>
+            </tr>
+            <tr>
+                <td>門脇　寿太</td><td>内野</td><td>右左</td><td>171㎝・70㎏</td><td>生涯スポーツ学部1年</td><td>鵡川高</td>
+            </tr>
+            <tr>
+                <td>坂井　琥珀</td><td>内野</td><td>右左</td><td>171㎝・75㎏</td><td>生涯スポーツ学部1年</td><td>旭川明成高</td>
+            </tr>
+            <tr>
+                <td>藤森　大輔</td><td>内野</td><td>右左</td><td>169㎝・70㎏</td><td>生涯スポーツ学部1年</td><td>札幌稲雲高</td>
+            </tr>
+            <tr>
+                <td>後藤　歩太</td><td>外野</td><td>右右</td><td>183㎝・73㎏</td><td>生涯スポーツ学部4年</td><td>北海道科学<br>大学高</td>
+            </tr>
+            <tr>
+                <td>鈴木　丈流</td><td>外野</td><td>右右</td><td>175㎝・73㎏</td><td>生涯スポーツ学部4年</td><td>北星学園大学<br>付属高</td>
+            </tr>
+            <tr>
+                <td>竹内　快維</td><td>外野</td><td>左右</td><td>175㎝・82㎏</td><td>生涯スポーツ学部4年</td><td>札幌丘珠高</td>
+            </tr>
+            <tr>
+                <td>寺倉　琉翔</td><td>外野</td><td>右左</td><td>178㎝・75㎏</td><td>生涯スポーツ学部4年</td><td>札幌日本大学高</td>
+            </tr>
+            <tr>
+                <td>中西　堅</td><td>外野</td><td>右右</td><td>165㎝・65㎏</td><td>生涯スポーツ学部4年</td><td>札幌光星高</td>
+            </tr>
+            <tr>
+                <td>河野　優希</td><td>外野</td><td>右右</td><td>185㎝・85㎏</td><td>生涯スポーツ学部3年</td><td>旭川実業高</td>
+            </tr>
+            <tr>
+                <td>高杉　大斗</td><td>外野</td><td>右左</td><td>176㎝・80㎏</td><td>生涯スポーツ学部3年</td><td>札幌光星高</td>
+            </tr>
+            <tr>
+                <td>高瀬　蒼生</td><td>外野</td><td>右右</td><td>178㎝・89㎏</td><td>生涯スポーツ学部3年</td><td>釧路北陽高</td>
+            </tr>
+            <tr>
+                <td>谷内　太郎</td><td>外野</td><td>右右</td><td>183㎝・90㎏</td><td>生涯スポーツ学部3年</td><td>滝川西高</td>
+            </tr>
+            <tr>
+                <td>村上　礼</td><td>外野</td><td>右右</td><td>174㎝・68㎏</td><td>生涯スポーツ学部3年</td><td>北海学園札幌高</td>
+            </tr>
+            <tr>
+                <td>安藤　優汰</td><td>外野</td><td>右右</td><td>180㎝・75㎏</td><td>生涯スポーツ学部1年</td><td>白樺学園高</td>
+            </tr>
+            <tr>
+                <td>小栗　一郎</td><td>外野</td><td>右右</td><td>174㎝・78㎏</td><td>生涯スポーツ学部1年</td><td>武修館高</td>
+            </tr>
+            <tr>
+                <td>小鹿　将司</td><td>外野</td><td>右右</td><td>178㎝・84㎏</td><td>生涯スポーツ学部1年</td><td>小樽桜陽高</td>
+            </tr>
+            <tr>
+                <td>寺倉　陸翔</td><td>外野</td><td>右右</td><td>179㎝・76㎏</td><td>生涯スポーツ学部1年</td><td>札幌日本大学高</td>
+            </tr>
+            <tr>
+                <td>中泉　琉豊</td><td>外野</td><td>右右</td><td>175㎝・77㎏</td><td>生涯スポーツ学部1年</td><td>秋田県立<br>金足農業高</td>
+            </tr>
+            <tr>
+                <td>水野　雅菜</td><td>主務</td><td></td><td></td><td>教育文化学部４年</td><td>札幌丘珠高</td>
+            </tr>
+            <tr>
+                <td>大嶋向日葵</td><td>副務</td><td></td><td></td><td>生涯スポーツ学部2年</td><td>札幌東商業高</td>
+            </tr>
+            <tr>
+                <td>小野　智春</td><td>マネージャー</td><td></td><td></td><td>教育文化学部1年</td><td>岩見沢東高</td>
+            </tr>
+            <tr>
+                <td>中田　生吹</td><td>マネージャー</td><td></td><td></td><td>生涯スポーツ学部1年</td><td>石狩南高</td>
+            </tr>
+
+        </table>
+        <!-- <div class="fix">
             <div class="possition">
                 <p>キャプテン</p>
             </div>
-            <div class="member" id="syusyou">
+            <div class="member" id="syusyou2">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -213,11 +470,31 @@ footer{
             </div>
         </div>
      
-<!-- --------------------------------------------------- -->
+---------------------------------------------------
         <div class="possition"><p>副キャプテン</p></div>
-    <section class="fuku">
+    <section class="fuku" id="syusyou2">
        
-        <div class="member">
+        <div class="member" id="syusyou2">
+            <img src="#">
+            <ul>
+                <li>松倉優弥</li>
+                <li>2000.11.11</li>
+                <li>180cm 70kg</li>
+                <li>内野手</li>
+                <li>あいうえお高校</li>
+            </ul>
+        </div>
+        <div class="member" id="syusyou2">
+            <img src="#">
+            <ul>
+                <li>松倉優弥</li>
+                <li>2000.11.11</li>
+                <li>180cm 70kg</li>
+                <li>内野手</li>
+                <li>あいうえお高校</li>
+            </ul>
+        </div>
+        <div class="member" id="syusyou2">
             <img src="#">
             <ul>
                 <li>渡辺　琉太</li>
@@ -227,17 +504,7 @@ footer{
                 <li>あいうえお高校</li>
             </ul>
         </div>
-        <div class="member">
-            <img src="#">
-            <ul>
-                <li>渡辺　琉太</li>
-                <li>2000.11.11</li>
-                <li>180cm 70kg</li>
-                <li>内野手</li>
-                <li>あいうえお高校</li>
-            </ul>
-        </div>
-        <div class="member">
+        <div class="member" id="syusyou2">
             <img src="#">
             <ul>
                 <li>渡辺　琉太</li>
@@ -248,10 +515,10 @@ footer{
             </ul>
         </div>
     </section>
-<!-- ------------------------------------------------------ -->
+------------------------------------------------------
     <div class="possition"><p>投手</p></div>
         <section class="fuku"> 
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -261,7 +528,7 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -271,7 +538,7 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -281,7 +548,7 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -291,7 +558,7 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -301,7 +568,7 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -311,7 +578,7 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -321,7 +588,47 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
+                <img src="#">
+                <ul>
+                    <li>渡辺　琉太</li>
+                    <li>2000.11.11</li>
+                    <li>180cm 70kg</li>
+                    <li>内野手</li>
+                    <li>あいうえお高校</li>
+                </ul>
+            </div>
+            <div class="member" id="syusyou">
+                <img src="#">
+                <ul>
+                    <li>渡辺　琉太</li>
+                    <li>2000.11.11</li>
+                    <li>180cm 70kg</li>
+                    <li>内野手</li>
+                    <li>あいうえお高校</li>
+                </ul>
+            </div>
+            <div class="member" id="syusyou">
+                <img src="#">
+                <ul>
+                    <li>渡辺　琉太</li>
+                    <li>2000.11.11</li>
+                    <li>180cm 70kg</li>
+                    <li>内野手</li>
+                    <li>あいうえお高校</li>
+                </ul>
+            </div>
+            <div class="member" id="syusyou">
+                <img src="#">
+                <ul>
+                    <li>渡辺　琉太</li>
+                    <li>2000.11.11</li>
+                    <li>180cm 70kg</li>
+                    <li>内野手</li>
+                    <li>あいうえお高校</li>
+                </ul>
+            </div>
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -332,11 +639,11 @@ footer{
                 </ul>
             </div>
         </section>
-<!-- -------------------------------------------------------- -->
+--------------------------------------------------------
         <div class="possition"><p>捕手</p></div>
     <section class="fuku">
        
-        <div class="member">
+        <div class="member" id="syusyou">
             <img src="#">
             <ul>
                 <li>渡辺　琉太</li>
@@ -346,7 +653,7 @@ footer{
                 <li>あいうえお高校</li>
             </ul>
         </div>
-        <div class="member">
+        <div class="member" id="syusyou">
             <img src="#">
             <ul>
                 <li>渡辺　琉太</li>
@@ -356,7 +663,7 @@ footer{
                 <li>あいうえお高校</li>
             </ul>
         </div>
-        <div class="member">
+        <div class="member" id="syusyou">
             <img src="#">
             <ul>
                 <li>渡辺　琉太</li>
@@ -367,10 +674,10 @@ footer{
             </ul>
         </div>
     </section>
-<!-- -------------------------------------------------------- -->
+--------------------------------------------------------
     <div class="possition"><p>内野手</p></div>
         <section class="fuku"> 
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -380,7 +687,7 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -390,7 +697,7 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -400,7 +707,7 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -410,7 +717,7 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -420,7 +727,7 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -432,10 +739,10 @@ footer{
             </div>
             </div>
         </section>
-        <!-- -------------------------------------------------------- -->
+        --------------------------------------------------------
     <div class="possition"><p>外野手</p></div>
         <section class="fuku"> 
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -445,7 +752,7 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -455,7 +762,7 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -465,7 +772,7 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -475,7 +782,7 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -485,7 +792,37 @@ footer{
                     <li>あいうえお高校</li>
                 </ul>
             </div>
-            <div class="member">
+            <div class="member" id="syusyou">
+                <img src="#">
+                <ul>
+                    <li>渡辺　琉太</li>
+                    <li>2000.11.11</li>
+                    <li>180cm 70kg</li>
+                    <li>内野手</li>
+                    <li>あいうえお高校</li>
+                </ul>
+            </div>
+            <div class="member" id="syusyou">
+                <img src="#">
+                <ul>
+                    <li>渡辺　琉太</li>
+                    <li>2000.11.11</li>
+                    <li>180cm 70kg</li>
+                    <li>内野手</li>
+                    <li>あいうえお高校</li>
+                </ul>
+            </div>
+            <div class="member" id="syusyou">
+                <img src="#">
+                <ul>
+                    <li>渡辺　琉太</li>
+                    <li>2000.11.11</li>
+                    <li>180cm 70kg</li>
+                    <li>内野手</li>
+                    <li>あいうえお高校</li>
+                </ul>
+            </div>
+            <div class="member" id="syusyou">
                 <img src="#">
                 <ul>
                     <li>渡辺　琉太</li>
@@ -496,10 +833,28 @@ footer{
                 </ul>
             </div>
             </div>
-        </section>
+        </section>   -->
     </main>
 <footer>
-    <h2>北翔大学硬式野球部ホームページ</h2>
+    <div class="foo">
+        <h2>北翔大学硬式野球部</h2>
+        <div class="jusyo">
+             <p>〒061-8511 </p>
+            <p>北海道江別市文京台23番地 </p>
+            <p id="under-line">mail:hokusho.bbc@icloud.com</p>
+        </div>
+        <h2>北翔大学硬式野球部公式Twitter</h2>
+            <div class="qr-twi">
+                <a href="https://twitter.com/hokusho_lancers">https://twitter.com/hokusho_lancers</a>
+                <img src="css/img/twitter.png" alt="" id="twi">
+            </div>
+
+        <h2>北翔大学硬式野球部公式Instagram</h2>
+        <div class="qr-insta">
+            <a href="https://www.instagram.com/hokusho_lancers">https://www.instagram.com/hokusho_lancers</a>
+            <img src="css/img/instagram.png" alt="" id="insta">
+        </div>
+    </div>
 </footer>
 
 <script src="js/main.js"></script>
