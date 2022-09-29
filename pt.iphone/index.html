@@ -7,16 +7,22 @@
     <title>北翔大学硬式野球部ホームページ</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="css/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/img/favicon.png">
+    <link rel="manifest" href="css/img/favicon.png">
+    <link rel="mask-icon" href="css/img/favicon.png" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta content="北海道江別市にある札幌学生野球連盟所属、北翔大学硬式野球部（Baseball team of Hokusho University）のオフィシャルホームページです。試合予定・結果や野球部員紹介、成績などを紹介します。" name="description">
+    <meta name="keywords" content="キーワード1,キーワード2,キーワード3">
+
     <style>
-        /*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
+   
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -70,14 +76,13 @@ a {
     background:transparent;
 }
 
-/* change colours to suit your needs */
 ins {
     background-color:#ff9;
     color:#000;
     text-decoration:none;
 }
 
-/* change colours to suit your needs */
+
 mark {
     background-color:#ff9;
     color:#000;
@@ -99,7 +104,7 @@ table {
     border-spacing:0;
 }
 
-/* change border colour to suit your needs */
+
 hr {
     display:block;
     height:1px;
@@ -127,23 +132,27 @@ input, select {
                   <ul>
                     <a href="player.html"><li>選手紹介</li></a>
                     <a href="katsudou.html"><li>活動紹介</li></a>
-                    <li>試合日程</li>
+                    <!-- <a href="nittei.html"><li>試合日程</li></a> -->
+                    <a href="teamkousei.html"><li>チーム構成</li></a>
+                    <a href="sukejul.html"><li>年間スケジュール</li></a>
+                    <a href="torikumi.html"><li>独自の取り組み</li></a>
+                    <a href="coachmessage.html"><li>指導者の方へ</li></a>
+                    <a href="staff.html"><li>学生コーチ・マネージャー・アナリスト募集</li></a>
                   </ul>
                 </nav>
                 <div class="black-bg" id="js-black-bg"></div>
                </div>
-
-
-            <img src="css/img/hu.icon.png" alt="">
+            <a href="index.html"><img src="css/img/favicon.png" alt=""></a>
             <h1>北翔大学硬式野球部</h1>
         </div>
     </header>
-    <main>
+    <div class="body">
+    <main id="calsel">
         <div class="center slide" id="slides">
-            <img src="css/img/actuallyfree.jpg">
-            <img src="css/img/sample01.jpg">
-            <img src="css/img/sample02.jpg">
-            <img src="css/img/sample03.jpg">
+            <img src="css/img/hokusyo-syuugou.jpg">
+            <img src="css/img/hokusyu-syou.jpg">
+            <img src="css/img/hokusho-ground.jpg">
+            <!-- <img src="css/img/sample03.jpg"> -->
         </div>
     </main>
 
@@ -155,35 +164,56 @@ input, select {
             <h2>REVORUTION
                 <br>~この１球にすべてをかけろ～
             </h2>
-            <p>MORE</p>
+            <a href="katsudou.html">MORE</a>
         </div>
     </section>
 
     <section class="how-to-use">
-        <div class="container">
-            <div class="iflame-wrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/IbFrSb5YaTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-wrap">
+            <div class="video">
+                <iframe width="334" height="594" src="https://www.youtube.com/embed/QycFcLmJkZ0" title="2022年9月23日" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            <!-- <p>（ここに好きな動画を貼るなど。）</p> -->
         </div>
-        <p>（ここに好きな動画を貼るなど。）</p>
     </section>
 
     <section class="sec3">
         <div class="message">
-            <img src="css/img/133003.jpg">
-            <h3>キャプテンの画像と言葉</h3>
-            <p>message.message.message.message.message.
-                message.message.message.message.message.
-                message.message.message.message.message.
-                message.message.message.message.
-            </p>
+            <!-- <img src="css/img/133003.jpg"> -->
+            <div class="message2">
+                <h3>キャプテンからからの言葉</h3>
+                <p>　北翔大学硬式野球部では、野球の技術だけではなく、人間力の向上を目指して、考える力を身に付けられるように取り組んでいます。
+                    練習メニューは監督・コーチだけではなく、主将・副主将が中心となって考え、選手の1人1人の声を聞きながら練習の意図の明確化や自主練習の時間などを大切にしています。
+                    自分たちで色々なことを考えて、野球に取り組むことで野球以外の細かい部分まで気づけるようになっていきます。
+                    日々の成長を感じながら何事にも全力で取り組みます。
+                    応援よろしくお願いいたします。
+                </p>
+            </div>
         </div>
     </section>
-</main>
+    
 <footer>
-    <h2>北翔大学硬式野球部ホームページ</h2>
-</footer>
+    <div class="foo">
+        <h2>北翔大学硬式野球部</h2>
+        <div class="jusyo">
+             <p>〒061-8511 </p>
+            <p>北海道江別市文京台23番地 </p>
+            <p id="under-line">mail:hokusho.bbc@icloud.com</p>
+        </div>
+        <h2>北翔大学硬式野球部公式Twitter</h2>
+            <div class="qr-twi">
+                <a href="https://twitter.com/hokusho_lancers">https://twitter.com/hokusho_lancers</a>
+                <img src="css/img/twitter.png" alt="" id="twi">
+            </div>
 
+        <h2>北翔大学硬式野球部公式Instagram</h2>
+        <div class="qr-insta">
+            <a href="https://www.instagram.com/hokusho_lancers">https://www.instagram.com/hokusho_lancers</a>
+            <img src="css/img/instagram.png" alt="" id="insta">
+        </div>
+    </div>
+</footer>
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>
