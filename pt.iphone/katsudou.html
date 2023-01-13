@@ -124,6 +124,7 @@ input, select {
 main{
     background: rgb(253, 249, 233);
     padding-top: 80px;
+    font-family: serif;
 }
 .katsu1 h1{
     background: brown;
@@ -140,19 +141,25 @@ main{
     margin: 10px auto;
     width: 90%;
     line-height: 20px;
+    font-size: 18px;
+    line-height: 26px;
 }
 .katsu2 h2{
     margin: 14px auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 26px;
+    line-height: 34px;
     width: 80%;
+    border-bottom: brown 2px solid;
+    padding-bottom: 10px;
 }
 .katsu2 p{
     display: block;
     width: 80%;
     flex-wrap: wrap;
     margin: 0 auto;
-    line-height: 20px;
+    line-height: 26px;
+    font-size: 18px;
 }
 .katsu2 ul li img{
     width:280px;
@@ -169,14 +176,19 @@ main{
 /* pc表示 */
 @media (min-width: 768px) {
 
-    .katsu1{
-        font-size: 18px;
+    .katsu1 p{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .katsu1 h1{
+        font-size: 34px;
+        letter-spacing: 6px;
     }
     .katsu2{
         font-size: 18px;
     }
     .katsu2 h2{
-        font-size: 28px;
+        font-size: 34px;
         margin: 30px auto;
     }
     .katsu2 ul{
@@ -190,7 +202,8 @@ main{
         margin: 0 auto;
     }
     .katsu2 p{
-        line-height: 28px;
+        line-height: 34px;
+        font-size: 24px;
     }
     .katsu2 p:last-child{
         margin-bottom: 80px;
@@ -220,17 +233,18 @@ main{
                   <ul>
                     <a href="index.html"><li>ホーム</li></a>
                     <a href="player.html"><li>選手紹介</li></a>
-                    <!-- <a href="nittei.html"><li>試合日程</li></a> -->
+                    <a href="katsudou.html"><li>活動紹介</li></a>
                     <a href="teamkousei.html"><li>チーム構成</li></a>
+                    <a href="gekkan.html"><li>月間スケジュール</li></a>
                     <a href="sukejul.html"><li>年間スケジュール</li></a>
-                    <a href="torikumi.html"><li>独自の取り組み</li></a>
+                    <a href="torikumi.html"><li>科学サポート</li></a>
                     <a href="coachmessage.html"><li>指導者の方へ</li></a>
                     <a href="staff.html"><li>学生コーチ・マネージャー・アナリスト募集</li></a>
                   </ul>
                 </nav>
                 <div class="black-bg" id="js-black-bg"></div>
                </div>
-            <a href="index.html"><img src="css/img/favicon.png" alt=""></a>
+            <a href="index.html"><img src="css/img/MicrosoftTeams-image.png" alt=""></a>
             <h1>北翔大学硬式野球部</h1>
         </div>
     </header>
