@@ -122,47 +122,20 @@ input, select {
 }
 /* ---body---- */
 main{
-    padding-top: 80px;
     background: rgb(253, 249, 233);
+    padding-top: 80px;
     font-family: serif;
 }
-.contain h2{
-    background: brown;
-    color: #fff;
-    font-size: 34px;
-    letter-spacing: 6px;
-    font-weight: 600;
-    width: 80%;
-    padding: 10px;
-    margin: 0 auto;
+main p{
+    margin: 40px;
     text-align: center;
-}
-.contain img{
-    display: block;
-    width: 80%;
-    height: auto;
-    margin: 40px auto 20px;
-}
-.contain2{
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0 20px 40px;
-}
-.contain2 p:last-child{
-    color: brown;
-}
-.contain3 p{
-    width: 80%;
-    margin: 10px 20px;
     font-size: 18px;
 }
-.contain3 p:last-child{
-    margin-bottom: 40px;
-}
-.contain3 h2{
+main h1{
     background: brown;
     color: #fff;
     font-size: 26px;
+    letter-spacing: 6px;
     font-weight: 600;
     width: 80%;
     padding: 10px;
@@ -170,16 +143,37 @@ main{
     text-align: center;
     margin-bottom: 30px;
 }
-
+main p{
+    margin: 20px ;
+    font-size: 20px;
+    line-height: 26px;
+}
+main section{
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 40px 0;
+    padding-bottom: 40px;
+}
+.gazou img{
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
 @media (min-width: 768px) {
-    .contain img{
-        width: 70%;
+    main p{
+        font-size: 20px;
+        margin-top: 30px;
     }
-    .contain2 p,
-    .contain3 p{
-        font-size: 28px;
-        margin-left: 16%;
-        line-height: 28px;
+    main section{
+        font-size: 20px;
+        margin: 20px auto 0 20%;
+    }
+    .gazou img{
+        width: 60%;
+        height: auto;
+        margin-bottom: 40px;
     }
 }
     </style>
@@ -213,27 +207,20 @@ main{
         </div>
     </header>
     <main>
-        <div class="contain">
-            <h2>年間スケジュール</h2>
-            <img src="./css/img/sukejurl.jpg" alt="">
-        </div>
-        <div class="contain2">
-            <p>※12月～2月はアルバイト期間</p>
-            <p>※冬季期間の練習は学内の体育館などを使用</p>
-            <p>※新型コロナウイルス感染対策のため、年間スケジュールは変更する場合があります。</p>
-        </div>
-        <div class="contain3">
-            <h2>練習について</h2>
-            <p>練習頻度：オンシーズン　週６日</p>
-            <p>基本毎週月曜OFF</p>
-            <p>※大会等時期により変動あり</p>
-            <p>◯平日（4講義終了後から実施）</p>
-            <p>16：45〜　集合・練習開始</p>
-            <p>◯土日祝日</p>
-            <p>OP戦や紅白戦を実施</p>
-            <p>日によって集合時間は変動</p>
-        </div>
-    
+        <h1>学生スタッフ募集中</h1>
+        <div class="gazou"><img src="css/img/gakuseicoach.jpg" alt=""></div>
+        <p>北翔大学硬式野球部では選手以外</p>
+        <p>にも学生コーチ・マネージャー・</p>
+        <p>アナリストも募集しています。</p>
+        <p>詳細は硬式野球部監督（渡部）までお問合せください。</p>
+        
+    <section>
+        <br>連絡先</br>
+        <br>TEL.011-387-3973（渡部研究室）
+        <br>E-mail.watashun@hokusho-u.ac.jp
+        <br>※不通の場合は011-386-8011（事務局）
+    </section>
+    </main>
     <footer>
         <div class="foo">
             <h2>北翔大学硬式野球部</h2>
@@ -255,7 +242,7 @@ main{
             </div>
         </div>
     </footer>
-    </main>
+    
         <script src="js/main.js"></script>
     </body>
     </html>
