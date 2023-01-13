@@ -128,6 +128,7 @@ main{
     font-size: 12px;
     background: rgb(253, 249, 233);
     z-index: -500;
+    font-family: serif;
 }
 main h1{
     background: brown;
@@ -143,6 +144,10 @@ main h1{
     display: flex;
     margin: 50px 20px 50px auto;
     line-height: 18px;
+}
+.yakuin p{
+    font-size: 16px;
+    line-height: 22px;
 }
 .yakuin ul li img{
     width: 110px;
@@ -166,7 +171,8 @@ main h1{
 }
 .yakuin2 ul li{
     text-align: center;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 20px;
     list-style: none;
     flex-wrap: wrap;
     margin: 0 auto 20px;
@@ -182,6 +188,7 @@ main h1{
     font-size: 20px;
     margin-top: 30px;
     line-height: 28px;
+    padding: 10px;
 }
 .anara img{
     display: block;
@@ -193,15 +200,20 @@ main h1{
 .anara h2{
     text-align: center;
     margin: 20px;
-    font-size: 16px;
+    font-size: 22px;
 }
 .anara p{
     margin: 0 30px 40px;
-    line-height: 18px;
+    line-height: 24px;
+    font-size: 18px;
 }
 
 @media (min-width: 768px) {
 
+    main h1{
+        font-size: 34px;
+        letter-spacing: 6px;
+    }
     .yakuin ul li img{
         width: 400px;
         height: auto;
@@ -212,11 +224,11 @@ main h1{
         width: 180px;
     }
     .yakuin p{
-        font-size: 18px;
+        font-size: 24px;
         margin: 50px auto 60px ;
         margin-right: 8%;
         width: 50%;
-        line-height: 28px;
+        line-height: 36px;
     }
     .yakuin h2{
         font-size: 24px;
@@ -232,18 +244,22 @@ main h1{
         margin: 30px 60px 10px;
     }
     .yakuin2 h2,p{
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 24px;
+        line-height: 30px;
     }
     .anara img{
         width: 600px;
     }
+    .yakuin3 h1{
+        font-size: 34px;
+        padding: 10px;
+    }
     .anara h2{
-        font-size: 28px;
+        font-size: 34px;
     }
     .anara p{
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 24px;
+        line-height: 34px;
         width: 800px;
         margin: 0 auto 80px;
     }
@@ -265,16 +281,17 @@ main h1{
                     <a href="index.html"><li>ホーム</li></a>
                     <a href="player.html"><li>選手紹介</li></a>
                     <a href="katsudou.html"><li>活動紹介</li></a>
-                    <!-- <a href="nittei.html"><li>試合日程</li></a> -->
+                    <a href="teamkousei.html"><li>チーム構成</li></a>
+                    <a href="gekkan.html"><li>月間スケジュール</li></a>
                     <a href="sukejul.html"><li>年間スケジュール</li></a>
-                    <a href="torikumi.html"><li>独自の取り組み</li></a>
+                    <a href="torikumi.html"><li>科学サポート</li></a>
                     <a href="coachmessage.html"><li>指導者の方へ</li></a>
                     <a href="staff.html"><li>学生コーチ・マネージャー・アナリスト募集</li></a>
                   </ul>
                 </nav>
                 <div class="black-bg" id="js-black-bg"></div>
                </div>
-               <a href="index.html"><img src="css/img/favicon.png" alt=""></a>
+               <a href="index.html"><img src="css/img/MicrosoftTeams-image.png" alt=""></a>
             <h1>北翔大学硬式野球部</h1>
         </div>
     </header>
@@ -340,57 +357,57 @@ main h1{
         <div class="yakuin2">
             <ul>
                 <li>
-                    <img src="css/img/image (3).jpg" alt="">
+                    <img src="css/memberphoto/abe.jpg" alt="">
                     <h2>主将</h2>
-                    <h2>渡辺　琉太</h2>
-                    <p>（北海高校）</p>
+                    <h2>山田　翔仁</h2>
+                    <p>（駒澤大学付属<br>苫小牧高）</p>
                     <p>生涯スポーツ学部</p>
                 </li>
                 <li>
-                    <img src="css/img/image (4).jpg" alt="">
+                    <img src="css/memberphoto/kounoyuki.jpg" alt="">
                     <h2>副主将</h2>
-                    <h2>緒方　康太</h2>
-                    <p>(札幌大谷高校）</p>
+                    <h2>河野　優希</h2>
+                    <p>（旭川実業高）</p>
                     <p>生涯スポーツ学部</p>
                 </li>
                 <li>
-                    <img src="css/img/image (5).jpg" alt="">
+                    <img src="css/memberphoto/bannno.jpg" alt="">
                     <h2>副主将</h2>
-                    <h2>蓬田　航大</h2>
-                    <p>（札幌光星高校）</p>
+                    <h2>板野　勇太</h2>
+                    <p>（旭川実業高）</p>
                     <p>生涯スポーツ学部</p>
                 </li>
                 <li>
-                    <img src="css/img/image (6).jpg" alt="">
+                    <img src="css/memberphoto/takase.jpg" alt="">
+                    <h2>副主将</h2>
+                    <h2>高瀬　蒼生</h2>
+                    <p>（釧路北陽高）</p>
+                    <p>生涯スポーツ学部</p>
+                </li>
+                <li>
+                    <img src="css/memberphoto/abe.jpg" alt="">
+                    <h2>副主将</h2>
+                    <h2>阿部　治貴</h2>
+                    <p>（函館大学付属）</p>
+                    <p>生涯スポーツ学部</p>
+                </li>
+                <li>
+                    <img src="css/memberphoto/simamoto.jpg" alt="">
                     <h2>投手リーダー</h2>
-                    <h2>高津　柊</h2>
-                    <p>（札幌光星高校）</p>
+                    <h2>島本　太一</h2>
+                    <p>（札幌清田高）</p>
                     <p>生涯スポーツ学部</p>
                 </li>
                 <li>
-                    <img src="css/img/image (7).jpg" alt="">
-                    <h2>捕手リーダー</h2>
-                    <h2>前田　恭敬</h2>
-                    <p>（浦河高校）</p>
+                    <img src="css/memberphoto/tatikawa.jpg" alt="">
+                    <h2>投手リーダー</h2>
+                    <h2>太刀川　将一</h2>
+                    <p>（札幌新川高）</p>
                     <p>生涯スポーツ学部</p>
-                </li>
-                <li>
-                    <img src="css/img/image (8).jpg" alt="">
-                    <h2>外野手リーダー</h2>
-                    <h2>竹内　快維</h2>
-                    <p>（札幌丘珠高校）</p>
-                    <p>生涯スポーツ学部</p>
-                </li>
-                <li>
-                    <img src="css/img/image (9).jpg" alt="">
-                    <h2>主務</h2>
-                    <h2>水野　雅菜</h2>
-                    <p>（札幌丘珠高校）</p>
-                    <p>教育文化学部</p>
                 </li>
                 <li>
                     <img src="css/img/image (10).jpg" alt="">
-                    <h2>学生マネージャー</h2>
+                    <h2>主務</h2>
                     <h2>大嶋　向日葵</h2>
                     <p>（札幌東商業高校）</p>
                     <p>生涯スポーツ学部</p>
@@ -407,13 +424,6 @@ main h1{
                     <h2>学生マネージャー</h2>
                     <h2>中田　生吹</h2>
                     <p>（石狩南高校）</p>
-                    <p>生涯スポーツ学部</p>
-                </li>
-                <li>
-                    <img src="css/img/image (13).jpg" alt="">
-                    <h2>学生コーチ</h2>
-                    <h2>神原　圭介</h2>
-                    <p>（江差高校）</p>
                     <p>生涯スポーツ学部</p>
                 </li>
                 <li>
