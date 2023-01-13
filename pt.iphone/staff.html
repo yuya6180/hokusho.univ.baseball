@@ -122,15 +122,44 @@ input, select {
 }
 /* ---body---- */
 main{
-    background: rgb(253, 249, 233);
     padding-top: 80px;
+    background: rgb(253, 249, 233);
+    font-family: serif;
 }
-main p{
-    margin: 40px;
+.contain h2{
+    background: brown;
+    color: #fff;
+    font-size: 34px;
+    letter-spacing: 6px;
+    font-weight: 600;
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
     text-align: center;
+}
+.contain img{
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 40px auto 20px;
+}
+.contain2{
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 20px 40px;
+}
+.contain2 p:last-child{
+    color: brown;
+}
+.contain3 p{
+    width: 80%;
+    margin: 10px 20px;
     font-size: 18px;
 }
-main h1{
+.contain3 p:last-child{
+    margin-bottom: 40px;
+}
+.contain3 h2{
     background: brown;
     color: #fff;
     font-size: 26px;
@@ -141,36 +170,16 @@ main h1{
     text-align: center;
     margin-bottom: 30px;
 }
-main p{
-    margin: 20px ;
-    font-size: 16px;
-    line-height: 18px;
-}
-main section{
-    font-size: 14px;
-    margin: 0 40px 0;
-    padding-bottom: 40px;
-}
-.gazou img{
-    display: block;
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 10px;
-}
+
 @media (min-width: 768px) {
-    main p{
-        font-size: 20px;
-        margin-top: 30px;
+    .contain img{
+        width: 70%;
     }
-    main section{
-        font-size: 20px;
-        margin: 20px auto 80px 20%;
-    }
-    .gazou img{
-        width: 60%;
-        height: auto;
-        margin-bottom: 40px;
+    .contain2 p,
+    .contain3 p{
+        font-size: 28px;
+        margin-left: 16%;
+        line-height: 28px;
     }
 }
     </style>
@@ -190,31 +199,41 @@ main section{
                     <a href="player.html"><li>選手紹介</li></a>
                     <a href="katsudou.html"><li>活動紹介</li></a>
                     <a href="teamkousei.html"><li>チーム構成</li></a>
+                    <a href="gekkan.html"><li>月間スケジュール</li></a>
                     <a href="sukejul.html"><li>年間スケジュール</li></a>
-                    <a href="torikumi.html"><li>独自の取り組み</li></a>
+                    <a href="torikumi.html"><li>科学サポート</li></a>
                     <a href="coachmessage.html"><li>指導者の方へ</li></a>
+                    <a href="staff.html"><li>学生コーチ・マネージャー・アナリスト募集</li></a>
                   </ul>
                 </nav>
                 <div class="black-bg" id="js-black-bg"></div>
                </div>
-               <a href="index.html"><img src="css/img/favicon.png" alt=""></a>
+               <a href="index.html"><img src="css/img/MicrosoftTeams-image.png" alt=""></a>
             <h1>北翔大学硬式野球部</h1>
         </div>
     </header>
     <main>
-        <h1>学生スタッフ募集中</h1>
-        <div class="gazou"><img src="css/img/gakuseicoach.jpg" alt=""></div>
-        <p>北翔大学硬式野球部では選手以外にも学生コーチ・マネージャー・</p>
-        <p>アナリストも募集しています。</p>
-        <p>詳細は硬式野球部監督（渡部）までお問合せください。</p>
-        
-    <section>
-        <br>連絡先</br>
-        <br>TEL.011-387-3973（渡部研究室）
-        <br>E-mail.watashun＠hokusho-u.ac.jp
-        <br>※不通の場合は011-386-8011（事務局）
-    </section>
-    </main>
+        <div class="contain">
+            <h2>年間スケジュール</h2>
+            <img src="./css/img/sukejurl.jpg" alt="">
+        </div>
+        <div class="contain2">
+            <p>※12月～2月はアルバイト期間</p>
+            <p>※冬季期間の練習は学内の体育館などを使用</p>
+            <p>※新型コロナウイルス感染対策のため、年間スケジュールは変更する場合があります。</p>
+        </div>
+        <div class="contain3">
+            <h2>練習について</h2>
+            <p>練習頻度：オンシーズン　週６日</p>
+            <p>基本毎週月曜OFF</p>
+            <p>※大会等時期により変動あり</p>
+            <p>◯平日（4講義終了後から実施）</p>
+            <p>16：45〜　集合・練習開始</p>
+            <p>◯土日祝日</p>
+            <p>OP戦や紅白戦を実施</p>
+            <p>日によって集合時間は変動</p>
+        </div>
+    
     <footer>
         <div class="foo">
             <h2>北翔大学硬式野球部</h2>
@@ -236,7 +255,7 @@ main section{
             </div>
         </div>
     </footer>
-    
+    </main>
         <script src="js/main.js"></script>
     </body>
     </html>
