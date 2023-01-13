@@ -132,7 +132,7 @@ hamburger(ハンバーガーアイコン)
     position: fixed;
     right: -100%; /*ハンバーガーがクリックされる前はWindow右側に隠す*/
     top: 0;
-    width: 50%; /* 出てくるスライドメニューの幅 */
+    width: 100%; /* 出てくるスライドメニューの幅 */
     height: 100vh;
     background-color: brown;
     transition: all 0.8s;
@@ -147,13 +147,21 @@ hamburger(ハンバーガーアイコン)
       text-decoration: none;
   }
   .sp-nav ul a li{
-    margin-top: 36px;
+    margin-top: 28px;
   }
   .sp-nav ul li{
       font-size: 28px;
       text-align: center;
       color: #fff;
       border-bottom:solid 2px #fff;   
+  }
+  @media (min-width: 768px){
+    .sp-nav{
+      width: 50%;
+    }
+    .sp-nav ul a li{
+      margin-top: 36px;
+    }
   }
   
   /*ハンバーガーがクリックされたら右からスライド*/
