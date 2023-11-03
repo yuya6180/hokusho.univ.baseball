@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北翔大学硬式野球部ホームページ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="css/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/img/favicon.png">
+    <link rel="manifest" href="css/img/favicon.png">
+    <link rel="mask-icon" href="css/img/favicon.png" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        /*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* ---body---- */
+
+main{
+    padding-top: 80px;
+    font-size: 12px;
+    background: rgb(253, 249, 233);
+    z-index: -500;
+    font-family: serif;
+}
+main h1{
+    background: brown;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+.yakuin ul li{
+    display: flex;
+    margin: 50px 20px 50px auto;
+    line-height: 18px;
+}
+.yakuin p{
+    font-size: 16px;
+    line-height: 22px;
+}
+.yakuin ul li img{
+    width: 110px;
+    height: auto;
+    margin: 0 30px;
+    border-radius: 10px;
+}
+.yakuin h2{
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 6%;
+    letter-spacing: 4px;
+}
+.name h2{
+    text-align: center;
+    width: 140px;
+}
+.yakuin2 ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.yakuin2 ul li{
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0 auto 20px;
+    letter-spacing: 4px;
+}
+.yakuin2 img{
+    width: 140px;
+    height: auto;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+.yakuin3 h1{
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 28px;
+    padding: 10px;
+}
+.anara img{
+    display: block;
+    width: 260px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.anara h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 22px;
+}
+.anara p{
+    margin: 0 30px 40px;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+@media (min-width: 768px) {
+
+    main h1{
+        font-size: 34px;
+        letter-spacing: 6px;
+    }
+    .yakuin ul li img{
+        width: 400px;
+        height: auto;
+        margin: 40px 40px 40px 45%;
+    }
+    .yakuin h2{
+        padding-left: 70%;
+        width: 180px;
+    }
+    .yakuin p{
+        font-size: 24px;
+        margin: 50px auto 60px ;
+        margin-right: 8%;
+        width: 50%;
+        line-height: 36px;
+    }
+    .yakuin h2{
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0 auto;
+    }
+    .yakuin2{
+        margin: 80px 100px;
+    }
+    .yakuin2 img{
+        width: 240px;
+        height: auto;
+        margin: 30px 60px 10px;
+    }
+    .yakuin2 h2,p{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .anara img{
+        width: 600px;
+    }
+    .yakuin3 h1{
+        font-size: 34px;
+        padding: 10px;
+    }
+    .anara h2{
+        font-size: 34px;
+    }
+    .anara p{
+        font-size: 24px;
+        line-height: 34px;
+        width: 800px;
+        margin: 0 auto 80px;
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div id="nav-wrapper" class="nav-wrapper">
+                <div class="hamburger" id="js-hamburger">
+                  <span class="hamburger__line hamburger__line--1"></span>
+                  <span class="hamburger__line hamburger__line--2"></span>
+                  <span class="hamburger__line hamburger__line--3"></span>
+                </div>
+                <nav class="sp-nav">
+                  <ul>
+                    <a href="index.html"><li>ホーム</li></a>
+                    <a href="player.html"><li>選手紹介</li></a>
+                    <a href="katsudou.html"><li>活動紹介</li></a>
+                    <a href="teamkousei.html"><li>チーム構成</li></a>
+                    <a href="gekkan.html"><li>月間スケジュール</li></a>
+                    <a href="sukejul.html"><li>年間スケジュール</li></a>
+                    <a href="torikumi.html"><li>科学サポート</li></a>
+                    <a href="coachmessage.html"><li>指導者の方へ</li></a>
+                    <a href="staff.html"><li>学生コーチ・マネージャー・アナリスト募集</li></a>
+                  </ul>
+                </nav>
+                <div class="black-bg" id="js-black-bg"></div>
+               </div>
+               <a href="index.html"><img src="css/img/MicrosoftTeams-image.png" alt=""></a>
+            <h1>北翔大学硬式野球部</h1>
+        </div>
+    </header>
+    <main>
+        <h1>役員紹介</h1>
+        <div class="yakuin">
+            <ul>
+                <li>
+                    <div class="name">
+                    <img src="css/img/image.jpg" alt="">
+                    <h2>部長</h2>
+                    <h2>菊地　はるひ</h2>
+                    </div>
+                    <p><span>経歴</span>
+                        <br>・筑波大学
+                        <br>・筑波大学大学院
+                        <br>・専門：エアロビック・コーチング
+                        <br>
+                        <br>　北翔大学硬式野球部では、競技力向上とともに、心豊かな人間への成長することを目指した活動をしています。 情熱を探究心を持って野球に取り組み、目標に向かって努力していきましょう。</p>
+                </li>
+                <li>
+                    <div class="name">
+                       <img src="css/img/image (1).jpg" alt="">
+                    <h2>監督</h2>
+                    <h2>渡部　峻</h2> 
+                    </div>
+                    <p><span>経歴</span>
+                        <br>・北翔大学 生涯スポーツ学部 スポーツ教育学科 卒業
+                        <br>・北翔大学 生涯スポーツ学研究科 生涯スポーツ学専攻 修了
+                        <br>・北翔大学 生涯スポーツ学部 共同研究室 勤務
+                        <br>・北翔大学 生涯スポーツ学部 非常勤講師
+                        <br>・北翔大学 生涯スポーツ学部 スポーツ教育学科 講師
+                        <br>・専門：スポーツ・バイオメカニクス
+                        <br>
+                        <br>　北翔大学硬式野球部では、人間性を高め、社会人として活躍できる土台を作ることをもっとも大切にしています。挨拶、礼儀、日常生活、講義、ボランティア活動、全てが野球にもつながるという考えのもと、日々選手たちは練習に励んでいます。人間性を高めて、人間としても野球選手としても4年間で大きく成長しましょう。</p>
+                </li>
+                <li>
+                    <div class="name">
+                       <img src="css/img/tamaki.jpg" alt="">
+                    <h2>コーチ</h2>
+                    <h2>玉木　昂太</h2> 
+                    </div>
+                    <p><span>経歴</span>
+                        <br>・ 北海高校　卒業
+                        <br>・ 北翔大学　卒業
+                        <br>
+                        <br>　野球を通して「責任感のある行動ができる人間」を育成することを目的とし、野球以外のところでも細かく指導しています。1つのことに徹底的にこだわり、細かい部分まで考えられるようになった時に選手にとても人間としても成長できると思っています。野球部で細かい部分まで考える力を身につけましょう。</p>
+                </li>
+                <li>
+                    <div class="name">
+                        <img src="css/img/image (2).jpg" alt="">
+                    <h2>コーチ</h2>
+                    <h2>安田　智哉</h2>
+                    </div>
+                    <p><span>経歴</span>
+                        <br>・東海大学付属第四高等学校 卒業
+                        <br>・北翔大学 生涯スポーツ学部 スポーツ教育学科 卒業
+                        <br>
+                        <br>　野球部の活動を通して、人間性を高めることを第一として、広い視野を持って1つ1つの物事を考えて日々取り組んでいきましょう。皆さんが昨日より今日、今日より明日と日々成長できるように全力でサポートしていきます.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="yakuin2">
+            <ul>
+                <li>
+                    <img src="css/memberphoto/yamada.jpg" alt="">
+                    <h2>主将</h2>
+                    <h2>山田　翔仁</h2>
+                    <p>（駒澤大学付属<br>苫小牧高）</p>
+                    <p>生涯スポーツ学部</p>
+                </li>
+                <li>
+                    <img src="css/memberphoto/kounoyuki.jpg" alt="">
+                    <h2>副主将</h2>
+                    <h2>河野　優希</h2>
+                    <p>（旭川実業高）</p>
+                    <p>生涯スポーツ学部</p>
+                </li>
+                <li>
+                    <img src="css/memberphoto/bannno.jpg" alt="">
+                    <h2>副主将</h2>
+                    <h2>板野　勇太</h2>
+                    <p>（旭川実業高）</p>
+                    <p>生涯スポーツ学部</p>
+                </li>
+                <li>
+                    <img src="css/memberphoto/takase.jpg" alt="">
+                    <h2>副主将</h2>
+                    <h2>高瀬　蒼生</h2>
+                    <p>（釧路北陽高）</p>
+                    <p>生涯スポーツ学部</p>
+                </li>
+                <li>
+                    <img src="css/memberphoto/abe.jpg" alt="">
+                    <h2>副主将</h2>
+                    <h2>阿部　治貴</h2>
+                    <p>（函館大学付属）</p>
+                    <p>生涯スポーツ学部</p>
+                </li>
+                <li>
+                    <img src="css/memberphoto/simamoto.jpg" alt="">
+                    <h2>投手リーダー</h2>
+                    <h2>島本　太一</h2>
+                    <p>（札幌清田高）</p>
+                    <p>生涯スポーツ学部</p>
+                </li>
+                <li>
+                    <img src="css/memberphoto/tatikawa.jpg" alt="">
+                    <h2>投手リーダー</h2>
+                    <h2>太刀川　将一</h2>
+                    <p>（札幌新川高）</p>
+                    <p>生涯スポーツ学部</p>
+                </li>
+                <li>
+                    <img src="css/img/image (10).jpg" alt="">
+                    <h2>主務</h2>
+                    <h2>大嶋　向日葵</h2>
+                    <p>（札幌東商業高校）</p>
+                    <p>生涯スポーツ学部</p>
+                </li>
+                <li>
+                    <img src="css/img/image (11).jpg" alt="">
+                    <h2>学生マネージャー</h2>
+                    <h2>小野　智春</h2>
+                    <p>（岩見沢東高校）</p>
+                    <p>教育文化学部</p>
+                </li>
+                <li>
+                    <img src="css/img/image (12).jpg" alt="">
+                    <h2>学生マネージャー</h2>
+                    <h2>中田　生吹</h2>
+                    <p>（石狩南高校）</p>
+                    <p>生涯スポーツ学部</p>
+                </li>
+                <li>
+                    <img src="css/img/image (15).jpg" alt="">
+                    <h2>学生コーチ</h2>
+                    <h2>阿部　卓也</h2>
+                    <p>（北海学園札幌高校）</p>
+                    <p>生涯スポーツ学部</p>
+                </li>
+            </ul>
+        </div>
+    
+    <div class="yakuin3">
+        <h1>アナライザ－・動作分析スタッフ募集中！</h1>
+        <div class="anara">
+            <img src="css/img/image (16).jpg" alt="">
+            <h2>アナライザ－・動作分析スタッフ</h2>
+            <p>　チームが勝つためのゲームのデータ収集や解析、選手の投球フォームや打撃フォームなどの動作分析を主に行います。
+                監督が「スポーツ・バイオメカニクス」の専門家であることから硬式野球部では、積極的にモーションキャプチャーを使って動作分析を実施しています。その、サポートを行います。動作を分析していくと今まで見えないところが明らかに。</p>
+        </div>
+    </div>
+    <footer>
+        <div class="foo">
+            <h2>北翔大学硬式野球部</h2>
+            <div class="jusyo">
+                 <p>〒061-8511 </p>
+                <p>北海道江別市文京台23番地 </p>
+                <p id="under-line">mail:hokusho.bbc@icloud.com</p>
+            </div>
+            <h2>北翔大学硬式野球部公式Twitter</h2>
+                <div class="qr-twi">
+                    <a href="https://twitter.com/hokusho_lancers">https://twitter.com/hokusho_lancers</a>
+                    <img src="css/img/twitter.png" alt="" id="twi">
+                </div>
+    
+            <h2>北翔大学硬式野球部公式Instagram</h2>
+            <div class="qr-insta">
+                <a href="https://www.instagram.com/hokusho_lancers">https://www.instagram.com/hokusho_lancers</a>
+                <img src="css/img/instagram.png" alt="" id="insta">
+            </div>
+        </div>
+    </footer>
+    </main>
+        <script src="js/main.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,524 @@
+body{
+    /* font-family: serif; */
+    font-weight: 600;
+    margin: 0%;   
+}
+.body{
+  background: rgb(253, 249, 233);
+  position: relative;
+  /* font-family: serif; */
+}
+/* .header{
+  position: relative;
+} */
+header{
+  z-index: 101;
+  position: relative;
+}
+.head{
+    background-color: brown;
+    display: flex;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10px;
+}
+.head img{
+    width: 100px;
+    padding: 20px 0px 5px 5px;
+}
+.head h1{
+    color: #fff;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    font-family: serif;
+}
+.material-icons{
+    margin: 16px 14px auto auto;
+    color: #fff;
+}
+main{
+  background: rgb(253, 249, 233);
+  /* font-family: serif; */
+}
+
+@media (min-width: 768px) {
+#calsel{
+  margin: 0 80px;
+}
+.head h1{
+  opacity: 1;
+  color: #fff;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 6px;
+  padding-left: 10px;
+}
+.head img{
+  width: 150px;
+  padding: 20px 50px;
+}
+.head span{
+  margin: 8px;
+}
+}
+
+
+
+
+
+/* 
+hamburger(ハンバーガーアイコン)
+=================================== */
+.hamburger {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 300;
+    font-family: serif;
+  }
+  
+  .hamburger__line {
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    right: 0;
+    background-color: #000;
+    transition: all 0.5s;
+  }
+  
+  .hamburger__line--1 {
+    top: -5px;
+    background: #fff;
+  }
+  
+  .hamburger__line--2 {
+    top: 10px;
+    height: 3px;
+    background: #fff;
+  }
+  
+  .hamburger__line--3 {
+    top: 24px;
+    background: #fff;
+  }
+  
+  /*ハンバーガーがクリックされたら*/
+  .open .hamburger__line--1 {
+    transform: rotate(-45deg);
+    top: 11px;
+  }
+  
+  .open .hamburger__line--2 {
+    opacity: 0;
+  }
+  
+  .open .hamburger__line--3 {
+    transform: rotate(45deg);
+    top: 11px;
+  }
+  
+  /* 
+  sp-nav(ナビ)
+  =================================== */
+  .sp-nav {
+    position: fixed;
+    right: -100%; /*ハンバーガーがクリックされる前はWindow右側に隠す*/
+    top: 0;
+    width: 100%; /* 出てくるスライドメニューの幅 */
+    height: 100vh;
+    background-color: brown;
+    transition: all 0.8s;
+    z-index: 200;
+    overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+  }
+
+  .sp-nav ul{
+      margin-top: 100px;
+  }
+  .sp-nav a{
+      text-decoration: none;
+  }
+  .sp-nav ul a li{
+    margin-top: 28px;
+  }
+  .sp-nav ul li{
+      font-size: 28px;
+      text-align: center;
+      color: #fff;
+      border-bottom:solid 2px #fff;   
+  }
+  @media (min-width: 768px){
+    .sp-nav{
+      width: 50%;
+    }
+    .sp-nav ul a li{
+      margin-top: 36px;
+    }
+  }
+  
+  /*ハンバーガーがクリックされたら右からスライド*/
+  .open .sp-nav {
+    right: 0;
+  }
+  
+  /* 
+  black-bg(ハンバーガーメニュー解除用bg)
+  =================================== */
+  .black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  /*ハンバーガーメニューが開いたら表示*/
+  .open .black-bg {
+    opacity: 0.7;
+    visibility: visible;
+  }
+
+
+  .carousel{
+    width: 80%;
+    margin: 16px auto;
+}
+/* --------カルーセル-------- */
+/* force image size */
+#slides{
+  padding: 80px auto;
+  padding-bottom: 50px;
+}
+.slide img {
+    width: inherit;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  .slide {
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .slide > :first-child {
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-delay: 2.4s;
+    animation-iteration-count: infinite;
+  }
+  @media (min-width:750px){
+    .slide{
+        display: none;
+    }
+    .pc-img{
+      text-align: center;
+    }
+    .pc-img img{
+      width: 100%;
+    }
+}
+@media (max-width:749px){
+    .pc-img{
+        display: none;
+    }
+}
+  
+  @keyframes slide {
+    0% {
+      margin-left: 0;
+    }
+    20% {
+      margin-left: -100%;
+    }
+    40% {
+      margin-left: -200%;
+    }
+    60% {
+      margin-left: -300%;
+    }
+    80% {
+      margin-left: -400%;
+    }
+    100% {
+      margin-left: -500%;
+    }
+  }
+  
+  .center {
+    margin: auto;
+    padding-top: 60px;
+  }
+  
+/* -------------------------------- */
+  .sec1{
+    position: relative;
+    z-index: 10;
+    font-family: serif;
+}
+@media (min-width: 768px){
+  .sec1{
+    margin-top: -160px;
+    margin-bottom: -140px;
+  }
+}
+.sec1 a {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  padding: 40px;
+}
+.black-box{
+    width: 100%;
+    height: 240px;
+    transform: skewY(-3deg);
+    position: absolute;
+    top: -50px;
+    z-index: -1;
+    background-color: rgb(32, 32, 32);
+}
+.black-box2{
+    width: 100%;
+    height: 80px;
+    transform: skewY(3deg);
+    position: absolute;
+    top: 240px;
+    z-index: -1;
+    background-color: rgb(32, 32, 32);
+}
+
+.slogan{
+    background-color: rgb(32, 32, 32);;
+    text-align: center;
+    padding: 40px 0;
+    color: #fff;
+    letter-spacing: 12px;
+    margin-top: 80px;
+}
+.slogan h1{
+    font-size: 22px;
+    border-bottom: brown 3px solid;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 2rem;
+}
+.slogan h2{
+  padding-top: 30px;
+    font-size: 42px;
+    z-index: -1;
+    border-bottom: brown 3px solid;
+    width: 80%;
+    margin: 0 auto 45px;
+    line-height: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ---------- */
+/* 動画全体の横幅を指定するためのdiv */
+.video-wrap {
+  max-width: 70%; /* ここに動画の横幅を指定 */
+  margin: 120px auto 80px;
+  position: relative;
+  z-index: 1;
+}
+
+/* 動画を囲うdiv */
+.video {
+  position: relative;
+  width:100%; /* 横幅は100%で固定 */
+  height:0; /* 高さは0にしておく(padding-topで高さを指定するため) */
+  padding-top: 56.25%; /* 高さを指定(16:9) */
+  z-index: -1;
+}
+
+/* YouTube埋め込み用のiframe */
+.video iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* ----- */
+
+.message {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 12px;
+}
+.message img{
+    height: auto;
+    margin:0 auto;
+    width: 70%;
+    border-radius: 10px;
+}
+.message h3{
+  font-weight: 300;
+  margin-top: 20px;
+  text-align: center;
+}
+.message p{
+    margin-top: 20px;
+}
+.message2 p{
+  line-height: 180%;
+  padding: 0 10%;
+  font-size: 18px;
+}
+
+.foo{
+  background: #000;
+  padding: 20px 40px 40px;
+  font-family: serif;
+}
+footer h2{
+  font-size: 20px;
+  line-height: 14px;
+  color: #fff;
+  margin-top: 40px;
+}
+footer p{
+  font-size: 20px;
+  color: #fff;
+  line-height: 24px;
+}
+footer a{
+  font-size: 14px;
+  color: #fff;
+}
+.foo img{
+  display: block;
+  margin: 40px auto;
+}
+.qr-twi a,
+.qr-insta a{
+  cursor: pointer;
+}
+
+
+
+
+/* pc表示 */
+@media (min-width: 768px) {
+
+  .how-to-use{
+    margin-top: 280px;
+  }
+  .message2 h3{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: -120px;
+  }
+  .message2 p{
+    font-weight: 300;
+    text-align: left;
+    display: block;
+    margin: 40px auto 0;
+  }
+  .slogan h1{
+    font-size: 38px;
+    padding-bottom: 20px;
+  }
+  .slogan h2{
+    font-size: 70px;
+    line-height: 60px;
+    letter-spacing: 28px;
+    padding-bottom: 20px;
+  }
+  .slogan a{
+    font-size: 20px;
+  }
+
+  .black-box2{
+    width: 100%;
+    height: 120px;
+    transform: skewY(3deg);
+    position: absolute;
+    top: 240px;
+  }
+
+  .sec3 img {
+    width: 26%;
+    height: 100%;
+    margin-left: 12%;
+  }
+
+  .message2 p{
+    font-size: 28px;
+  }
+
+  .video-wrap{
+    margin: 120px auto;
+  }
+  .message{
+    display: flex;
+  }
+
+  .sp-nav ul li{
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  .sp-nav ul li:hover{
+    opacity: .6;
+  }
+  .foo{
+    padding-left: 180px;
+    position: relative;
+  }
+  #under-line{
+    border-bottom: #fff 2px solid;
+    padding-bottom: 40px;
+  }
+  footer h2,
+  footer p,
+  footer a{
+    font-size: 28px;
+    line-height: 36px;
+  }
+  footer a{
+    padding-left: 80px;
+    cursor: pointer;
+  }
+  footer h2{
+    margin: 40px;
+  }
+  .foo img{
+    width: 140px;
+  }
+  #twi{
+    position: absolute;
+    top: 280px;
+    right: 28%;
+  }
+  #insta{
+    position: absolute;
+    top: 460px;
+    right: 28%;
+  }
+.qr-insta{
+  margin-bottom: 60px;
+}
+.jusyo{
+  margin-left: 80px;
+}
+
+}

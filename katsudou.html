@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北翔大学硬式野球部ホームページ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="css/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/img/favicon.png">
+    <link rel="manifest" href="css/img/favicon.png">
+    <link rel="mask-icon" href="css/img/favicon.png" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        /*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* ---body---- */
+main{
+    background: rgb(253, 249, 233);
+    padding-top: 80px;
+    font-family: serif;
+}
+.katsu1 h1{
+    background: brown;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.katsu1 p{
+    margin: 10px auto;
+    width: 90%;
+    line-height: 20px;
+    font-size: 18px;
+    line-height: 26px;
+}
+.katsu2 h2{
+    margin: 14px auto;
+    text-align: center;
+    font-size: 26px;
+    line-height: 34px;
+    width: 80%;
+    border-bottom: brown 2px solid;
+    padding-bottom: 10px;
+}
+.katsu2 p{
+    display: block;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    line-height: 26px;
+    font-size: 18px;
+}
+.katsu2 ul li img{
+    width:280px;
+    height: 180px;
+    display: block;
+    margin: 80px auto 20px;
+    border-radius: 10px;
+}
+.katsu2 ul{
+    margin: 50px auto;
+}
+
+
+/* pc表示 */
+@media (min-width: 768px) {
+
+    .katsu1 p{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .katsu1 h1{
+        font-size: 34px;
+        letter-spacing: 6px;
+    }
+    .katsu2{
+        font-size: 18px;
+    }
+    .katsu2 h2{
+        font-size: 34px;
+        margin: 30px auto;
+    }
+    .katsu2 ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 70px; 
+    }
+    .katsu2 ul li{
+        list-style: none;
+        width: 680px;
+        margin: 0 auto;
+    }
+    .katsu2 p{
+        line-height: 34px;
+        font-size: 24px;
+    }
+    .katsu2 p:last-child{
+        margin-bottom: 80px;
+    }
+    .katsu2 ul li img{
+        width: 600px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    
+
+
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div id="nav-wrapper" class="nav-wrapper">
+                <div class="hamburger" id="js-hamburger">
+                  <span class="hamburger__line hamburger__line--1"></span>
+                  <span class="hamburger__line hamburger__line--2"></span>
+                  <span class="hamburger__line hamburger__line--3"></span>
+                </div>
+                <nav class="sp-nav">
+                  <ul>
+                    <a href="index.html"><li>ホーム</li></a>
+                    <a href="player.html"><li>選手紹介</li></a>
+                    <a href="katsudou.html"><li>活動紹介</li></a>
+                    <a href="teamkousei.html"><li>チーム構成</li></a>
+                    <a href="gekkan.html"><li>月間スケジュール</li></a>
+                    <a href="sukejul.html"><li>年間スケジュール</li></a>
+                    <a href="torikumi.html"><li>科学サポート</li></a>
+                    <a href="coachmessage.html"><li>指導者の方へ</li></a>
+                    <a href="staff.html"><li>学生コーチ・マネージャー・アナリスト募集</li></a>
+                  </ul>
+                </nav>
+                <div class="black-bg" id="js-black-bg"></div>
+               </div>
+            <a href="index.html"><img src="css/img/MicrosoftTeams-image.png" alt=""></a>
+            <h1>北翔大学硬式野球部</h1>
+        </div>
+    </header>
+    <main>
+    <section class="katsu1">
+        <h1>活動方針・活動内容</h1>
+        <p>　北翔大学硬式野球部では、「人間の成長なくして技術的成長なし」の考え方を軸に、人としての在り方、生き方、マナー、モラルを最も重要視しています。</p>
+        <p>　そのため、人間性を高めることを第一に野球以外の部分も大切にしています。その中で、スポーツ科学を知見を練習に取り入れ、競技力の向上を目指します。</p>
+    </section>
+    <section class="katsu2">
+        <ul>
+            <li>
+                <img src="./css/img/katsudou1.jpg" alt="">
+                <h2>目的は人間形成</h2>
+                <h2>目標は「日本一」</h2>
+                <p>　北翔大学硬式野球部では、競技力向上とともに野球部での活動を通して、挨拶や日頃の講義の受講態度、目上の人への接し方、ボランティア活動に至るまで、人間性を高めることも目的として日々生活しています。</p>
+            </li>
+            <li>
+                <img src="css/img/katsudou2.jpg" alt="">
+                <h2>最先端のスポーツ科学を活用</h2>
+                <p>　練習をするにあたり、三次元動作分析装置やフォースプレート（身体にかかる力を計測できる機械）、ボール回転数の計測機器など様々な機器を駆使して、競技力向上を図っています。
+                    希望すれば、いつでも研究者の側面も持つ監督が動作分析をしてくれます。</p>
+            </li>
+            <li>
+                <img src="css/img/katsudou3.jpg" alt="">
+                <h2>理学療法士やアスレティックトレーナーと連携</h2>
+                <p>　競技力生活において、コンディションを管理することは非常に重要です。そこで、北翔大学硬式野球部では、理学療法士やアスレティックトレーナーの資格を持つプロフェッショナルの力をかりて、コンディションの管理や怪我からの早期復帰をアシストします。</p>
+            </li>
+            <li>
+                <img src="css/img/katsudou4.png" alt="">
+                <h2>充実した練習環境</h2>
+                <p>　専用グラウンドがあり、実技の講義（野球・ソフトボール）で使用する時間以外は自由に自主練習ができます。大学は講義がない時間もあるため、空き時間を有効に使って、スキルアップを目指します。
+                    ピッチングマシン（2台）
+                    ブルペン（3塁側2カ所 1塁側2カ所）
+                    打撃練習用ゲージ ※3カ所で同時にバッティングができます。</p>
+            </li>
+            <li>
+                <img src="css/img/katsudou5.jpg" alt="">
+                <h2>トレーニングに打ち込める環境</h2>
+                <p>　球速アップや打撃力向上のための身体操作や筋力トレーニングを思う存分実施できます。
+                    特にスポーツ教育学科では、トレーニング論、基礎解剖学、運動生理学、栄養学など身体づくりに関する知識を学ぶことができ、実践できる環境があります。</p>
+            </li>
+            <li>
+                <img src="css/img/katsudou6.jpg" alt="">
+                <h2>研究に関わることができる</h2>
+                <p>　大学は教育を受けるだけではなく、研究機関でもあります。大学の講義や硬式野球部での活動などを通して、興味がある分野のことを研究の補助や卒業論文で関わることができます。</p>
+            </li>
+            <li>
+                <img src="css/img/katsudou7.jpg" alt="">
+                <h2>自ら考え練習、大学の講義が競技力向上に繋がる</h2>
+                <p>　北翔大学生涯スポーツ学部スポーツ教育学科では、スポーツに関する科目が多数あり、学んだことを部活動で実践できる環境があります。</p>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <div class="foo">
+            <h2>北翔大学硬式野球部</h2>
+            <div class="jusyo">
+                 <p>〒061-8511 </p>
+                <p>北海道江別市文京台23番地 </p>
+                <p id="under-line">mail:hokusho.bbc@icloud.com</p>
+            </div>
+            <h2>北翔大学硬式野球部公式Twitter</h2>
+                <div class="qr-twi">
+                    <a href="https://twitter.com/hokusho_lancers">https://twitter.com/hokusho_lancers</a>
+                    <img src="css/img/twitter.png" alt="" id="twi">
+                </div>
+    
+            <h2>北翔大学硬式野球部公式Instagram</h2>
+            <div class="qr-insta">
+                <a href="https://www.instagram.com/hokusho_lancers">https://www.instagram.com/hokusho_lancers</a>
+                <img src="css/img/instagram.png" alt="" id="insta">
+            </div>
+        </div>
+    </footer>
+    </main>
+        <script src="js/main.js"></script>
+    </body>
+    </html>
